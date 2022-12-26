@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей валунов</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#hist">История</a></li>
+                <li><a href="#muz">Фото с музея</a></li>
+                <li><a href="#map">Карта</a></li>
+                <li><a href="#inff">Интересно знать </a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="content" id="main">
+        <h2>
+            МУЗЕЙ ВАЛУНОВ В МИНСКЕ
+        </h2>
+
+        <p class="p-content">
+            Как обойти пешком всю Беларусь? Оказывается, это реально, если отправится в парк камней, расположенный в
+            микрорайоне Уручье-2 на пересечении ул. Шугаева и ул. Академика Купревича. Если посмотреть на парк-музей с
+            высоты птичьего полета (или на карту-схему), можно догадаться, почему я сказала «обойти пешком всю Беларусь»
+            И на видеоролике вы можете увидеть этот музей с высоты птичьего полета.
+        </p>
+        <a onclick="toggleVideo();" class="btn btn--svg js-animated-button" href="#project"><span
+                class="btn--svg__label">Смотреть видео</span>
+            <svg class="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60"
+                enable-background="new 0 0 60 60">
+                <circle class="js-discover-circle" fill="#A93A26" cx="30" cy="30" r="28.7"></circle>
+            </svg>
+            <svg class="btn--svg__border" x="0px" y="0px" preserveaspectratio="" viewBox="2 29.3 56.9 13.4"
+                enable-background="new 2 29.3 56.9 13.4" width="190">
+                <g class="btn--svg__border--left js-discover-left-border" id="Calque_2">
+                    <path fill="none" stroke="#A93A26" stroke-width="1" stroke-miterlimit="1"
+                        d="M30.4,41.9H9c0,0-6.2-0.3-6.2-5.9S9,30.1,9,30.1h21.4"></path>
+                </g>
+                <g class="btn--svg__border--right js-discover-right-border" id="Calque_3">
+                    <path fill="none" stroke="#A93A26" stroke-width="1" stroke-miterlimit="1"
+                        d="M30.4,41.9h21.5c0,0,6.1-0.4,6.1-5.9s-6-5.9-6-5.9H30.4"></path>
+                </g>
+            </svg>
+        </a>
+        <div class="trailer">
+            <iframe width="860" height="515" src="https://www.youtube.com/embed/wTl3VGZpxV8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <img class="close" src="images/close.png" onclick="toggleVideo();">
+        </div>
+        </a>
+    </div>
+    <div class="inf" id="hist">
+        <div class="tex">
+            <h4>Создание музея Валунов</h4>
+            <p>
+                Идея создания парка-музея, принадлежавшая одному из первых белорусских академиков Гавриле Ивановичу
+                Горецкому, была поддержана в конце 1970-х — начале 1980-х годов в ЦК КПБ, руководимом П. М.
+                Машеровым. В 1985 году стараниями учёных-энтузиастов из Института геохимии и геофизики Национальной
+                академии наук Беларуси в Минске был создан музей валунов. В 1989 году музей валунов в Минске был
+                объявлен памятником природы республиканского значения.
+            </p>
+
+        </div>
+        <div class="img">
+            <img src="./images/muzej_valunov.jpg" alt="">
+        </div>
+
+    </div>
+
+
+
+    <div class="menu" id="muz">
+        <h2> Фото с музея </h2>
+        <div class="slider-wrapper">
+            <div><img src="images/img1.jpg" alt=""></div>
+            <div><img src="images/img2.jpg" alt=""></div>
+            <div><img src="images/img3.jpg" alt=""></div>
+            <div><img src="images/img4.jpg" alt=""></div>
+            <div><img src="images/img5.jpeg" alt=""></div>
+            <div><img src="images/img9.jpg" alt=""></div>
+            <div><img src="images/img10.jpg" alt=""></div>
+            <div><img src="images/img11.jpg" alt=""></div>
+            <div><img src="images/img12.jpg" alt=""></div>
+            <div><img src="images/img13.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="inf2" id="map">
+        <div class="img2">
+            <img src="./images/mmm.jpg" alt="">
+        </div>
+        <div class="tex2">
+            <h4>Музей - это карта?</h4>
+            <p>
+                Музей валунов действительно является картой Беларуси, толко в уменьшеном виде.
+                Граница карты обозначена низкими кустарниками, соблюдена ориентация относительно сторон света, на месте
+                областных городов растут по 3 голубые ели, реки показаны тропинками.
+                Экспонаты на "каменной карте" расположены именно на тех местах, откуда они были превезены.
+                Крата занимает 4,5 га, а площадь всего парка около 7 га.
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+   
+
+    <div class="inf" id="inst">
+        <div class="tex">
+            <h4>Это не только музей, но и красивый парк</h4>
+            <p>
+                Музей валунов в Минске — незаурядный парк для веселых прогулок и интересных экскурсий. В коллекции свыше
+                двух тысяч экспонатов, которые сохранились и соединились в одном месте. На сбор и транспортировку
+                каменных глыб работники потратили более пяти лет. Аналогов музея в Европе нет, что-то подобное создано
+                на территории Литвы, но с меньшей коллекцией и немного другой задумкой.
+            </p>
+
+        </div>
+        <div class="img3">
+            <img src="./images/orig.jpg" alt="">
+        </div>
+
+
+    </div>
+
+    <div class="inf2" id="inff">
+        <div class="img2">
+            <img src="./images/inter.jpg" alt="">
+        </div>
+        <div class="tex2">
+            <h4>Интересно узнать</h4>
+            <p>
+                Парк-музей валунов работает 365 дней в году, 24 часа в сутки. Гулять там можно абсолютно бесплатно и
+                сколько угодно, наслаждаясь каменными ландшафтами парка. Место пока не имеет официального музейного
+                статуса ввиду отстутствия поддержки государства, поэтому здесь еще нет табличек и навигации, как и
+                официального сайта. Здесь, в каменном музее, также находятся «Крест Стефана Батория», который входит в
+                тройку самых древних каменных крестов Беларуси; камень «Дед», привезённый с древнеязыческого капища;
+                пограничные валуны; старинные камни-жернова (основной элемент мельницы зерна).
+            </p>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

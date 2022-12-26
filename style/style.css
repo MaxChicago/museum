@@ -1,0 +1,307 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+header a,
+li {
+  color: #5c3f3b;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 600;
+  font-size: 1em;
+
+  transition: 0.5s;
+}
+
+.menu {
+  padding: 1% 0 9% 0;
+}
+
+header {
+  background-color: #dae2e4;
+  padding: 1%;
+  position: sticky;
+  top: 0px;
+  z-index: 10000;
+
+}
+
+header ul {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  position: sticky;
+}
+
+li a:hover {
+  color: #537C78;
+  transition: color 0.5s ease-in-out 100ms;
+
+}
+
+.content {
+
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url(../images/muzej-valunov\ \(1\)\ \(1\)\ \(1\)\ \(1\).jpg);
+  background-repeat: no-repeat;
+  padding: 7% 3% 21% 5%;
+}
+
+
+
+
+.content h2 {
+
+  font-size: 4em;
+  margin: 1% 0;
+}
+
+.content p {
+  width: 51%;
+  color: #46302d;
+  font-size: 1.6em;
+  text-align: justify;
+
+}
+
+.inf {
+  background-color: #2f2f2a;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+}
+
+
+.img {
+  margin: 7% 5% 7% 1%;
+}
+
+.img3 {
+  margin: 7% 5% 7% 1%;
+}
+
+.img img {
+  height: 590px;
+}
+
+.tex {
+  color: #dae2e4;
+  margin: 15% 1% 7% 5%;
+  text-align: right;
+}
+
+
+
+.slick-slide img {
+  width: 90%;
+}
+
+
+
+.inf2 {
+  background-color: #262520;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+}
+
+
+.img2 {
+  margin: 7% 1% 7% 5%;
+}
+
+.img2 img {
+  height: 590px;
+}
+
+.tex2 {
+  color: #dae2e4;
+  margin: 15% 5% 7% 1%;
+  text-align: left;
+}
+
+
+.trailer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(30px);
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+.trailer.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.trailer video {
+  width: 700px;
+  height: 700px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  max-width: 32px;
+}
+
+
+
+
+.slider-wrapper {
+  margin: 3% 5%;
+}
+
+.menu h2 {
+  font-size: 2.5em;
+  padding-top: 3%;
+  text-align: center;
+
+
+}
+
+
+.btn {
+  font-size: 1em;
+  line-height: 1em;
+  letter-spacing: 0.04em;
+  display: inline-block;
+
+
+}
+
+.btn--svg {
+  position: relative;
+  height: 42px;
+  width: 190px;
+  overflow: hidden;
+  border-radius: 25px;
+
+}
+
+.btn--svg:hover .btn--svg__circle circle {
+  transform: scale(0);
+
+}
+
+.btn--svg:hover .btn--svg__label {
+  color: white;
+
+
+}
+
+
+.btn--svg:hover .btn--svg__border--left path,
+.btn--svg:hover .btn--svg__border--right path {
+  stroke-dasharray: 61.8204345703 61.8204345703;
+  stroke-dashoffset: 0;
+  transition-delay: 0.25s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-property: stroke-dashoffset;
+
+}
+
+.btn--svg__label {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  z-index: 3;
+  width: 100%;
+  transition: color 0.5s ease-in-out;
+}
+
+.btn--svg__circle circle {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+}
+
+.btn--svg__border--left path,
+.btn--svg__border--right path {
+  stroke-dasharray: 61.8204345703 61.8204345703;
+  transition-duration: 0s;
+  transition-timing-function: ease-in-out;
+  transition-property: stroke-dashoffset;
+  transition-delay: 0.5s;
+}
+
+.btn--svg__border--left path {
+  stroke-dashoffset: -61.8204345703;
+}
+
+.btn--svg__border--right path {
+  stroke-dashoffset: 61.8204345703;
+}
+
+.btn--svg svg,
+.btn--svg__label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.holder {
+  position: relative;
+  width: fit-content;
+  height: 50%;
+  color: white;
+  margin: 1% 3%;
+
+}
+
+.holder img {
+  border-radius: 25px;
+  padding: 3%;
+
+}
+
+.block {
+  top: 205px;
+  left: 9px;
+  border-radius: 15px;
+  display: block;
+  position: absolute;
+  background-color: black;
+display: none;
+  padding: 4%;
+  width: 92%;
+
+}
+
+.holder:hover .block {
+  display: block;
+
+  transition: 0.55s opacity, 0.55s visibility;
+
+}
+
+
