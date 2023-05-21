@@ -50,6 +50,7 @@ li a:hover {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url(../images/muzej-valunov\ \(1\)\ \(1\)\ \(1\)\ \(1\).jpg);
   background-repeat: no-repeat;
   padding: 7% 3% 21% 5%;
+  background-size: cover;
 }
 
 
@@ -304,4 +305,26 @@ display: none;
 
 }
 
+.eks {
+  display: flex;
+  padding: 5%;
+  text-align: center;
+}
+
+.eks1,
+.eks2 {
+  flex: 1;
+}
+
+
+.eks1 img,
+.eks2 img {
+  border-radius: 40px;
+}
+
+.eks1 a,
+.eks2 a {
+color: black;
+text-decoration: none;
+}
 
